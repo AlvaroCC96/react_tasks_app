@@ -27,12 +27,14 @@ export default function TaskForm() {
         value={title}
         autoFocus
         className="bg-slate-300 p-3 w-full mb-2"
+        required="required"
       />
       <textarea
         placeholder="Escribe tu descripción"
         onChange={(e) => setDescription(e.target.value)}
         value={description}
         className="bg-slate-300 p-3 w-full mb-2"
+        required="required" 
       ></textarea>
       <button className="bg-indigo-500 px-3 py-1 text-white hover:bg-indigo-700">Guardar</button>
     </form>
